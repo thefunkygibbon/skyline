@@ -1,7 +1,7 @@
 {
   "__inputs": [
     {
-      "name": "DS_PROMETHEUS",
+      "name": "SKYLINE_PROMETHEUS",
       "label": "Prometheus",
       "description": "",
       "type": "datasource",
@@ -102,7 +102,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "${SKYLINE_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -203,7 +203,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${SKYLINE_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -216,7 +216,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${SKYLINE_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -230,7 +230,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${SKYLINE_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -249,7 +249,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "${SKYLINE_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -351,7 +351,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${SKYLINE_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -365,7 +365,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${SKYLINE_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -380,7 +380,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${SKYLINE_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -400,7 +400,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "${SKYLINE_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -539,7 +539,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${SKYLINE_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "count (last_over_time(network_probes_state{host_name=~\"$d_hostname\", environment=~\"$d_environment\", service_namespace=~\"$d_namespace\"}[30s]) == 0)",
@@ -551,7 +551,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${SKYLINE_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "count (last_over_time(network_probes_state{host_name=~\"$d_hostname\", environment=~\"$d_environment\", service_namespace=~\"$d_namespace\"}[30s]) == 1)",
@@ -562,7 +562,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${SKYLINE_PROMETHEUS}"
           },
           "editorMode": "code",
           "expr": "count (last_over_time(network_probes_state{host_name=~\"$d_hostname\", environment=~\"$d_environment\", service_namespace=~\"$d_namespace\"}[30s]) == -1)",
@@ -578,7 +578,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "${SKYLINE_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1008,7 +1008,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${SKYLINE_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -1023,7 +1023,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${SKYLINE_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -1038,7 +1038,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${SKYLINE_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -1053,7 +1053,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${SKYLINE_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -1068,7 +1068,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${SKYLINE_PROMETHEUS}"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -1155,7 +1155,7 @@
         "current": {},
         "datasource": {
           "type": "prometheus",
-          "uid": "${DS_PROMETHEUS}"
+          "uid": "${SKYLINE_PROMETHEUS}"
         },
         "definition": "label_values(system_uptime,environment)",
         "hide": 0,
@@ -1178,7 +1178,7 @@
         "current": {},
         "datasource": {
           "type": "prometheus",
-          "uid": "${DS_PROMETHEUS}"
+          "uid": "${SKYLINE_PROMETHEUS}"
         },
         "definition": "label_values(system_uptime{environment=~\"$d_environment\"},host_name)",
         "hide": 0,
@@ -1201,7 +1201,7 @@
         "current": {},
         "datasource": {
           "type": "prometheus",
-          "uid": "${DS_PROMETHEUS}"
+          "uid": "${SKYLINE_PROMETHEUS}"
         },
         "definition": "label_values(system_uptime{host_name=~\"$d_hostname\", environment=~\"$d_environment\"}, service_namespace)",
         "hide": 0,
