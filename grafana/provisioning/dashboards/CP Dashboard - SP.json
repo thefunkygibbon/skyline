@@ -1,14 +1,4 @@
 {
-  "__inputs": [
-    {
-      "name": "SKYLINE_PROMETHEUS",
-      "label": "Prometheus",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "prometheus",
-      "pluginName": "Prometheus"
-    }
-  ],
   "__elements": [],
   "__requires": [
     {
@@ -161,7 +151,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "exemplar": false,
           "expr": "(SUM(100-system_cpu_utilization{environment=~\"$d_environment\", sp_security_group_id=~\"$d_group_id\", state=\"idle\"})) / (100*count(system_cpu_utilization{environment=~\"$d_environment\", sp_security_group_id=~\"$d_group_id\", state=\"idle\"}))",
@@ -175,7 +165,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "exemplar": false,
           "expr": "sum(system_memory_usage{environment=~\"$d_environment\", sp_security_group_id=~\"$d_group_id\", state=\"used\"}) / ignoring (state) (sum(system_memory_limit{environment=~\"$d_environment\", sp_security_group_id=~\"$d_group_id\"}))",
@@ -293,7 +283,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -677,7 +667,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -693,7 +683,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -709,7 +699,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -725,7 +715,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "exemplar": false,
           "expr": "cluster_xl_pnotes{environment=~\"$d_environment\", sp_security_group_id=~\"$d_group_id\"}",
@@ -950,7 +940,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -1029,7 +1019,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -1145,7 +1135,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -1317,7 +1307,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -1491,7 +1481,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -1665,7 +1655,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -1791,7 +1781,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -1915,7 +1905,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -2039,7 +2029,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -2162,7 +2152,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -2261,7 +2251,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -2359,7 +2349,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -2388,7 +2378,7 @@
         "current": {},
         "datasource": {
           "type": "prometheus",
-          "uid": "${SKYLINE_PROMETHEUS}"
+          "uid": "SKYLINE_PROMETHEUS"
         },
         "definition": "label_values(system_uptime{sp_site_id=~\".+\"},environment)",
         "hide": 0,
@@ -2411,7 +2401,7 @@
         "current": {},
         "datasource": {
           "type": "prometheus",
-          "uid": "${SKYLINE_PROMETHEUS}"
+          "uid": "SKYLINE_PROMETHEUS"
         },
         "definition": "label_values(system_uptime{environment=~\"$d_environment\"}, sp_security_group_id)",
         "hide": 0,
