@@ -92,7 +92,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Number of overall monitored assets",
       "fieldConfig": {
@@ -146,7 +146,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -191,7 +191,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Top 3 assets CPU usage",
       "fieldConfig": {
@@ -247,7 +247,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -265,7 +265,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Top 3 assets RAM usage",
       "fieldConfig": {
@@ -321,7 +321,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -340,7 +340,7 @@
       "collapsed": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "gridPos": {
         "h": 1,
@@ -358,7 +358,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Machine Role",
       "fieldConfig": {
@@ -411,7 +411,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -429,7 +429,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Busy state of all CPU cores together",
       "fieldConfig": {
@@ -486,7 +486,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -505,7 +505,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Non available RAM memory",
       "fieldConfig": {
@@ -562,7 +562,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -581,7 +581,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Used Swap",
       "fieldConfig": {
@@ -638,7 +638,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -657,7 +657,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "",
       "fieldConfig": {
@@ -714,7 +714,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -733,7 +733,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "",
       "fieldConfig": {
@@ -790,7 +790,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -809,7 +809,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Basic network info per interface",
       "fieldConfig": {
@@ -902,7 +902,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -915,7 +915,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": true,
@@ -933,7 +933,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Version of the OS",
       "fieldConfig": {
@@ -981,7 +981,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1000,7 +1000,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Hardware Model",
       "fieldConfig": {
@@ -1053,7 +1053,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1071,7 +1071,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Installed policy name",
       "fieldConfig": {
@@ -1122,7 +1122,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "expr": "firewall_policy_name{host_name=~\"$d_hostname\", environment=~\"$d_environment\", service_namespace=\"vs_id_0\"}",
@@ -1139,7 +1139,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Time of last policy installation",
       "fieldConfig": {
@@ -1188,7 +1188,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "exemplar": false,
           "expr": "(firewall_policy_time{host_name=~\"$d_hostname\", environment=~\"$d_environment\", service_namespace=\"vs_id_0\"}>100000)*1000",
@@ -1216,7 +1216,7 @@
         "current": {},
         "datasource": {
           "type": "prometheus",
-          "uid": "${SKYLINE_PROMETHEUS}"
+          "uid": "SKYLINE_PROMETHEUS"
         },
         "definition": "label_values(system_uptime,environment)",
         "hide": 0,
@@ -1239,7 +1239,7 @@
         "current": {},
         "datasource": {
           "type": "prometheus",
-          "uid": "${SKYLINE_PROMETHEUS}"
+          "uid": "SKYLINE_PROMETHEUS"
         },
         "definition": "label_values(system_uptime{environment=~\"$d_environment\"},host_name)",
         "hide": 0,
