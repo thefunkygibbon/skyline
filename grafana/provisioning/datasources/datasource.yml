@@ -2,6 +2,7 @@ apiVersion: 1
 
 datasources:
   - name: SKYLINE_PROMETHEUS
+    uid: SKYLINE_PROMETHEUS
     type: prometheus
     access: proxy
     orgId: 1
