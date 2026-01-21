@@ -2438,7 +2438,7 @@
         "skipUrlSync": false,
         "sort": 0,
         "type": "query",
-        "datasource": "${SKYLINE_PROMETHEUS}"
+        "datasource": "SKYLINE_PROMETHEUS"
       }
     ]
   },
