@@ -1,14 +1,4 @@
 {
-  "__inputs": [
-    {
-      "name": "SKYLINE_PROMETHEUS",
-      "label": "Prometheus-1",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "prometheus",
-      "pluginName": "Prometheus"
-    }
-  ],
   "__elements": [],
   "__requires": [
     {
