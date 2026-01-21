@@ -1,14 +1,4 @@
 {
-  "__inputs": [
-    {
-      "name": "SKYLINE_PROMETHEUS",
-      "label": "Prometheus-1",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "prometheus",
-      "pluginName": "Prometheus"
-    }
-  ],
   "__elements": [],
   "__requires": [
     {
@@ -113,7 +103,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Virtual Systems count excluding VS0",
       "fieldConfig": {
@@ -161,7 +151,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "exemplar": true,
           "expr": "count(system_uptime{host_name=~\"$d_hostname\", environment=~\"$d_environment\"}) - 1",
@@ -176,7 +166,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "VSX overview originating from VS0 only ",
       "fieldConfig": {
@@ -264,7 +254,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -321,7 +311,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "VSX dynamic information from each of the VSs",
       "fieldConfig": {
@@ -409,7 +399,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "exemplar": true,
           "expr": "system_network_tcp_out_of_state_drops_state{host_name=\"$d_hostname\", environment=~\"$d_environment\"}",
@@ -471,7 +461,7 @@
       "collapsed": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "gridPos": {
         "h": 1,
@@ -487,7 +477,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Machine Role",
       "fieldConfig": {
@@ -540,7 +530,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -558,7 +548,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Version of the OS",
       "fieldConfig": {
@@ -606,7 +596,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -625,7 +615,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Total number of CPU cores",
       "fieldConfig": {
@@ -678,7 +668,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -696,7 +686,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Busy state of all CPU cores together",
       "fieldConfig": {
@@ -753,7 +743,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -772,7 +762,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Non available RAM memory",
       "fieldConfig": {
@@ -829,7 +819,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "expr": "system_memory_usage{host_name=\"$d_hostname\", environment=~\"$d_environment\", service_namespace=~\"$d_namespace\", state=\"used\"} / ignoring (state) system_memory_limit{host_name=\"$d_hostname\", environment=~\"$d_environment\", service_namespace=~\"$d_namespace\"} * 100",
           "hide": false,
@@ -843,7 +833,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Used Swap",
       "fieldConfig": {
@@ -900,7 +890,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -919,7 +909,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "\"/\" partition usage",
       "fieldConfig": {
@@ -976,7 +966,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -995,7 +985,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "\"/var/log\" partition usage",
       "fieldConfig": {
@@ -1052,7 +1042,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1071,7 +1061,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "CPU load  comparison by types",
       "fieldConfig": {
@@ -1127,7 +1117,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1146,7 +1136,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "OS Edition",
       "fieldConfig": {
@@ -1199,7 +1189,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1217,7 +1207,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Total RootFS",
       "fieldConfig": {
@@ -1270,7 +1260,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1288,7 +1278,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Uptime since last reboot",
       "fieldConfig": {
@@ -1341,7 +1331,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1359,7 +1349,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "FW build version",
       "fieldConfig": {
@@ -1407,7 +1397,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1426,7 +1416,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Total RAM",
       "fieldConfig": {
@@ -1479,7 +1469,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1497,7 +1487,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Top  VSs with the highest TX traffic",
       "fieldConfig": {
@@ -1551,7 +1541,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1570,7 +1560,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Top VSs with the highest RX traffic",
       "fieldConfig": {
@@ -1624,7 +1614,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1643,7 +1633,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Hardware Model",
       "fieldConfig": {
@@ -1696,7 +1686,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1714,7 +1704,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "description": "Total SWAP ",
       "fieldConfig": {
@@ -1767,7 +1757,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1786,7 +1776,7 @@
       "collapsed": true,
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "gridPos": {
         "h": 1,
@@ -1799,7 +1789,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "description": "Basic CPU info",
           "fieldConfig": {
@@ -1937,7 +1927,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "exemplar": true,
               "expr": "sum(system_cpu_utilization{host_name=\"$d_hostname\", environment=~\"$d_environment\", service_namespace=~\"$d_namespace\", state=\"system\"})",
@@ -1948,7 +1938,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "exemplar": true,
               "expr": "sum(system_cpu_utilization{host_name=\"$d_hostname\", environment=~\"$d_environment\", service_namespace=~\"$d_namespace\", state=\"user\"})",
@@ -1960,7 +1950,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "exemplar": true,
               "expr": "sum(system_cpu_utilization{host_name=\"$d_hostname\", environment=~\"$d_environment\", service_namespace=~\"$d_namespace\", state=\"io wait\"})",
@@ -1972,7 +1962,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "exemplar": true,
               "expr": "sum(system_cpu_utilization{host_name=\"$d_hostname\", environment=~\"$d_environment\", service_namespace=~\"$d_namespace\", state=\"idle\"})",
@@ -1988,7 +1978,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "description": "Basic memory usage",
           "fieldConfig": {
@@ -2131,7 +2121,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "exemplar": true,
               "expr": "system_memory_usage_real_total{host_name=\"$d_hostname\", environment=~\"$d_environment\", service_namespace=~\"$d_namespace\"}",
@@ -2144,7 +2134,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "exemplar": true,
               "expr": "system_memory_usage{host_name=\"$d_hostname\", environment=~\"$d_environment\", service_namespace=~\"$d_namespace\", state=\"used\"}",
@@ -2158,7 +2148,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "exemplar": true,
               "expr": "system_memory_usage{host_name=\"$d_hostname\", environment=~\"$d_environment\", service_namespace=~\"$d_namespace\", state=\"free\"}",
@@ -2172,7 +2162,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "exemplar": true,
               "expr": "system_paging_usage{host_name=\"$d_hostname\", environment=~\"$d_environment\", service_namespace=~\"$d_namespace\", state=\"used\"}",
@@ -2191,7 +2181,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "description": "Disk space used of all filesystems mounted",
           "fieldConfig": {
@@ -2314,7 +2304,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -2333,7 +2323,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "description": "Network traffic in bits/sec",
           "fieldConfig": {
@@ -2438,7 +2428,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -2451,7 +2441,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -2483,7 +2473,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "description": "CPU usage by cores",
           "fieldConfig": {
@@ -2567,7 +2557,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -2585,7 +2575,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "description": "CPU Interrupts info",
           "fieldConfig": {
@@ -2668,7 +2658,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -2686,7 +2676,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "description": "Disk space used of all filesystems mounted",
           "fieldConfig": {
@@ -2812,7 +2802,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -2831,7 +2821,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "description": "Network traffic per interface in bits/sec",
           "fieldConfig": {
@@ -2941,7 +2931,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -2954,7 +2944,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -2972,7 +2962,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "description": "Network traffic per interface by packets/sec ",
           "fieldConfig": {
@@ -3082,7 +3072,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -3095,7 +3085,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -3113,7 +3103,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "description": "Network drops per interface",
           "fieldConfig": {
@@ -3223,7 +3213,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -3236,7 +3226,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -3254,7 +3244,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "description": "Concurrent connections by type",
           "fieldConfig": {
@@ -3337,7 +3327,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "exemplar": true,
               "expr": "SUM(system_traffic_connections{host_name=\"$d_hostname\", environment=~\"$d_environment\", service_namespace=~\"$d_namespace\", protocol=\"other\"})",
@@ -3350,7 +3340,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "exemplar": true,
               "expr": "SUM(system_traffic_connections{host_name=\"$d_hostname\", environment=~\"$d_environment\", service_namespace=~\"$d_namespace\", protocol=\"tcp\", state=\"handshake\"})",
@@ -3363,7 +3353,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "exemplar": true,
               "expr": "SUM(system_traffic_connections{host_name=\"$d_hostname\", environment=~\"$d_environment\", service_namespace=~\"$d_namespace\", protocol=\"tcp\", state=\"established\"})",
@@ -3376,7 +3366,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "exemplar": true,
               "expr": "SUM(system_traffic_connections{host_name=\"$d_hostname\", environment=~\"$d_environment\", service_namespace=~\"$d_namespace\", protocol=\"tcp\", state=\"closed\"})",
@@ -3393,7 +3383,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "description": "Connection drops by type",
           "fieldConfig": {
@@ -3476,7 +3466,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -3495,7 +3485,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "description": "Connection rate per second",
           "fieldConfig": {
@@ -3606,7 +3596,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -3629,7 +3619,7 @@
       "collapsed": true,
       "datasource": {
         "type": "prometheus",
-        "uid": "${SKYLINE_PROMETHEUS}"
+        "uid": "SKYLINE_PROMETHEUS"
       },
       "gridPos": {
         "h": 1,
@@ -3642,7 +3632,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "description": "Network Traffic info per VS in bits/sec",
           "fieldConfig": {
@@ -3737,7 +3727,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -3750,7 +3740,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -3769,7 +3759,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "description": "Network info per VS in packets/sec",
           "fieldConfig": {
@@ -3864,7 +3854,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -3878,7 +3868,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -3896,7 +3886,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "description": "Drops info per VS context",
           "fieldConfig": {
@@ -3991,7 +3981,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -4004,7 +3994,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -4022,7 +4012,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "description": "Concurrent connections Per VS",
           "fieldConfig": {
@@ -4105,7 +4095,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -4120,7 +4110,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -4135,7 +4125,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -4150,7 +4140,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -4169,7 +4159,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "description": "Connection drops by type",
           "fieldConfig": {
@@ -4252,7 +4242,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -4271,7 +4261,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${SKYLINE_PROMETHEUS}"
+            "uid": "SKYLINE_PROMETHEUS"
           },
           "description": "Connection rate per second",
           "fieldConfig": {
@@ -4382,7 +4372,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${SKYLINE_PROMETHEUS}"
+                "uid": "SKYLINE_PROMETHEUS"
               },
               "editorMode": "code",
               "exemplar": true,
@@ -4414,7 +4404,7 @@
         "current": {},
         "datasource": {
           "type": "prometheus",
-          "uid": "${SKYLINE_PROMETHEUS}"
+          "uid": "SKYLINE_PROMETHEUS"
         },
         "definition": "label_values(system_gaia_os_role{role=~\".*VSX.*\"},environment)",
         "hide": 0,
@@ -4437,7 +4427,7 @@
         "current": {},
         "datasource": {
           "type": "prometheus",
-          "uid": "${SKYLINE_PROMETHEUS}"
+          "uid": "SKYLINE_PROMETHEUS"
         },
         "definition": "label_values(system_gaia_os_role{role=~\".*VSX.*\", environment=~\"$d_environment\"},host_name)",
         "hide": 0,
