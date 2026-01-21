@@ -101,7 +101,10 @@
   "panels": [
     {
       "collapsed": false,
-      "datasource": "kHT-PIenk",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "${SKYLINE_PROMETHEUS}"
+      },
       "gridPos": {
         "h": 1,
         "w": 24,
