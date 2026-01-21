@@ -23,7 +23,7 @@ chmod +x /usr/local/bin/docker-compose
 Clone this repository on your Docker host, cd into the skyline directory and run compose up:
 
 ```bash
-git clone https://github.com/deangoldhill/skyline.git
+git clone https://github.com/thefunkygibbon/skyline.git
 cd skyline
 
 docker-compose up -d
